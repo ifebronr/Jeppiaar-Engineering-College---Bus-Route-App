@@ -133,14 +133,18 @@ a {
   background-color: #f2f2f2;
 }
 
-#map {
+.main-container, #map {
   margin-left: 52px;
   height: 100vh;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
-#map.move-right {
+#map.move-map-right {
+  margin-left: 300px;
+}
+
+.main-container.move-right {
   margin-left: 300px;
 }
 /*# sourceMappingURL=main.css.map */

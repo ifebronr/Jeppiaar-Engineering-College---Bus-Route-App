@@ -3,13 +3,16 @@
 @import './_header';
 
 
-#map{
-    margin-left: 52px;
-  
+.main-container,#map{
+    margin-left: 52px;  
     height: 100vh;
     transition: all .2s ease-in-out;
 }
-#map.move-right{
-    margin-left: 300px;
-    
+
+#map.move-map-right{
+    margin-left: 300px;    
+}
+
+.main-container.move-right{
+    margin-left: 300px;    
 }

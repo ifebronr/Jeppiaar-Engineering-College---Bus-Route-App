@@ -25,11 +25,11 @@
         
         <nav id="cd-nav">  
             <ul id="cd-nav-items">
-                <li><a href=""><i class='bx bx-info-square'></i><span>About</span></a></li>
-                <li><a href=""><i class='bx bx-user' ></i><span>Admin</span></a></li>
+                <li><a href="{{ url_for('home')}}"><i class='bx bx-home'></i></i><span>Home</span></a></li>
+                <li><a href="{{ url_for('requestStop')}}"><i class='bx bx-location-plus'></i><span>Request Stop</span></a></li>
+                <li><a href="{{ url_for('feedback')}}"><i class='bx bx-message-square-detail' ></i><span>Feedback</span></a></li>
+                <li><a href="{{ url_for('complaints')}}"><i class='bx bx-message-square-error' ></i><span>Complaints</span></a></li>
                 <li><a href=""><i class='bx bx-code-curly' ></i><span>Developers</span></a></li>
-                <li><a href=""><i class='bx bx-message-square-detail' ></i><span>Feedback</span></a></li>
-                <li><a href=""><i class='bx bx-message-square-error' ></i><span>Complaints</span></a></li>
             </ul>
         </nav>
         <div id="copyright">
@@ -49,6 +49,12 @@
     <script src="{{ url_for('static',filename = 'dist/js/main.js')}}"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-dzia952cI56xdRpsy7X-cBHsDpDNM_c&callback=initMap">
+    </script>
+
+    <script> 
+
+   
+    
     </script>
 </body>
 </html>

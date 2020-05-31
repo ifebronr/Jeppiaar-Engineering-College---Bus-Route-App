@@ -28,7 +28,9 @@
               window.alert('Directions request failed due to ' + status);
             }
           });
-        
+        /* {{ route }} 
+            var route = {{route.test}}
+        */
         
        
           // add Marker Func 
@@ -43,6 +45,9 @@
           stop_8 = {lat:12.710423,lng: 80.106864};
           stop_9 = {lat:12.694901,lng: 80.036722};
           stop_10 = {lat:12.681185,lng:  79.990702};
+
+
+          /*  */ 
          
           noOfStudents = 25;
           function addMarker(coords,info){
@@ -52,7 +57,7 @@
   
         });
         var infoWindow = new google.maps.InfoWindow({
-          content:'<p> '+ info +  '</p>'
+          content:'<p>asdfasdfasdfasdfasdf '+ info +  'asdfasdfasdfasdfsdaf</p>'
         });
         marker.addListener('click', function(){
           infoWindow.open(map, marker);
